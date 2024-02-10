@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { shareReplay } from 'rxjs';
 import { ApiService } from './services/api.service';
+import { SearchService } from './services/search.service';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +10,12 @@ import { ApiService } from './services/api.service';
 })
 export class AppComponent implements OnInit{
   constructor(
-    private apiService: ApiService
+
   ) {}
 
   ngOnInit() {
-    this.apiService.getUser('johnpapa').subscribe(console.log);
+   
+   
   }
+  
 }

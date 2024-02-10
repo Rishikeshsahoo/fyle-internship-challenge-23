@@ -1,0 +1,21 @@
+.profile{
+    display:flex;
+    flex-direction: row;
+    margin:auto;
+    position: relative;
+    padding:0 13% 0 13%  ;
+    background-color:rgba(47, 231, 255, 0.118)
+}
+.image-url{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    
+}
+
+.image-url>img{
+    width: 50%;
+    border-radius: 100%;
+    margin: auto;
+}
+

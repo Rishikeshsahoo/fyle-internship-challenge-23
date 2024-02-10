@@ -1,0 +1,9 @@
+<div class="lg:px-64 sm:px-0 ">
+    <app-search-bar  (dataEmmiterEvent)="handleSubmit($event)"></app-search-bar>
+    <app-profile [profile]="response"></app-profile>
+    <app-gh-body [repositories]="repositories" ></app-gh-body>
+    
+    <app-skeleton [isLoaded]="isLoaded"></app-skeleton>
+  <app-pagination (pageEmitter)="handlePagination($event)" [formData]="formData" [totalRepos]="response.public_repos" [totalPages]="totalPages" [min]="min" [max]="max" ></app-pagination>
+
+</div>

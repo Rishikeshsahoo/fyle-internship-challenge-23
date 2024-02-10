@@ -1,0 +1,31 @@
+<div class="max-w-xl box-width lg:max-w-full lg:flex">
+ 
+  <div
+    class="border-2 w-full border-slate-700 rounded-md bg-white   p-4 flex flex-col justify-between leading-normal"
+  >
+    <div class="mb-4">
+     
+      <div class="card-title font-medium   mb-3">
+        {{name}}
+      </div>
+      <p *ngIf="description && description.length > 60" class="text-gray-700 text-base">
+        {{ description | slice: 0:60 }}...
+      </p>
+      <span *ngIf="!description " class="text-gray-700 text-base">
+        <app-topic  [type]="'error'"  [topic]="'No Description'" ></app-topic>
+      </span>
+      <p *ngIf="description && description.length <60" class="text-gray-700 text-base">
+        {{ description }}
+       </p>
+    </div>
+    <div class="flex flex-row flex-wrap">
+     
+      <span *ngIf="topics.length>0">
+      <app-topic [type]="'success'" *ngFor="let topic of topics| slice:0:4"  [topic]="topic" ></app-topic>
+    </span>
+    <span *ngIf="topics.length<=0">
+      <app-topic  [type]="'error'"  [topic]="'No Topics'" ></app-topic>
+    </span>
+    </div>
+  </div>
+</div>
