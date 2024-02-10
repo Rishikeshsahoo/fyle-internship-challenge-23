@@ -24,20 +24,32 @@ __Note__ - This challenge is in angular. We work on angular frameworks & after y
 
 You will hear back within 48 hours from us via email.
 
-## Installation
+## Assignment submission by Rishikesh Sahoo
 
-1. Fork this repository to your github account.
-2. Clone the forked repository and proceed with steps mentioned below.
 
-### Install requirements
-* Install angular cli [Ref](https://angular.io/cli)
-* `npm install` in this repository 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-## Further help
 
-Visit the [Angular Documentation](https://angular.io/guide/styleguide) to learn more.
-Styling is to be strictly done with [Tailwind](https://tailwindcss.com/docs/installation).
+## files and folders
+
+The entire application is divided in components, and there is only one page.
+
+ - all the **components** are in the **src\app\components** folder
+ - all the **services** are in the **src\app\services** folder
+ - all the **pages** are in the **src\app\pages** folder
+
+
+## URL caching 
+
+All the url requests have been properly cached using the shareReplay poperator using RxJs
+
+> An innovative way of handling the cache is also used
+
+## Rishikesh Sahoo
+
+This project has been created by Rishikesh Sahoo
+Email: rishikeshsahoo2828@gmail.com
+[My Resume](https://drive.google.com/file/d/1CAfMnJN1gmlULy9yM-DjurdrO1D0rZGT/view?usp=sharing)
+
+
