@@ -46,6 +46,19 @@ All the url requests have been properly cached using the shareReplay poperator u
 
 > An innovative way of handling the cache is also used
 
+
+## Testing guidelines 
+
+- One component named **HomeComponent** has been tested with 75% code coverage
+use the below command to run the test.
+    ``` ng test --include  src\app\pages\home --code-coverage ```
+
+
+- One Service named **SearchService** has been tested with 90% code coverage
+use the below command to run the test.
+    ``` ng test --include  src\app\services\ --code-coverage ```
+
+
 ## Rishikesh Sahoo
 
 This project has been created by Rishikesh Sahoo

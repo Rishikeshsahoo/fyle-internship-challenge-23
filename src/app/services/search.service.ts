@@ -45,15 +45,5 @@ export class SearchService {
     }
    }
  
-   // Method to clear cache for a specific URL
-   clearCache(url: string): void {
-     if (this.cache.has(url)) {
-       this.cache.delete(url);
-     }
-   }
- 
-   // Method to clear entire cache
-   clearAllCache(): void {
-     this.cache.clear();
-   }
+   
 }

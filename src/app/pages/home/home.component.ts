@@ -52,7 +52,6 @@ export class HomeComponent {
         this.isLoaded = false;
       })
     ).subscribe((data) => {
-      console.log("dataaaaaaaa",data)
       this.response = data;
     });
     this.repositories = this.searchService.getRepos(

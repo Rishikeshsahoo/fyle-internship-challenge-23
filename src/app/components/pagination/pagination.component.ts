@@ -19,7 +19,6 @@ export class PaginationComponent implements OnChanges{
 
   ngOnChanges()
   {
-    console.log("damnnn", this.formData)
     this.totalPages=Math.ceil(this.totalRepos/this.formData.per_page);
     this.min=Math.max(this.formData.page-2,1);
     this.max=Math.min(this.totalPages,this.formData.page+2);
